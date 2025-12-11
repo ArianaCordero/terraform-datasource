@@ -25,7 +25,7 @@ data "aws_ami" "amazon_linux" {
 }
 
 resource "aws_security_group" "web" {
-  name        = "web-sg-terraform"
+  name        = "web-sg-terraform-v2"
   description = "Allow HTTP traffic"
   vpc_id      = data.aws_vpc.default.id
 
